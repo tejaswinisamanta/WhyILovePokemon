@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHY I LOVE Pokemon</title>
+    <style>
+
+      body {
+        background: linear-gradient(#f5f5f5, #1d67be, #fff000);
+      }
+
+      .me {
+        font-family: cursive;
+        color: whitesmoke;
+        font-weight: 10px;
+        text-align: center;
+        padding: 12px 24px;
+        
+      }
+
+      .foot {
+        margin: 100px;
+        padding: 20px;
+      }
+
+      span {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color: #ff0016;
+
+      }
+      .Ash {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+      }
+
+      .Ash-Pokemon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        padding: 16px 24px;
+        
+      }      
+      
+      h2 {
+        text-align: center;
+        padding: 16px 24px;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      hr {
+        border: none;
+        height: 10px;
+        background: linear-gradient(to right, transparent, transparent, transparent);
+      }
+
+
+      button {
+        display: block;
+        margin: 50px auto;
+        border: 2px solid #000000;
+        background: #ff0016;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bolder;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(19, 20, 46, 0.1) 0px 12px 12px 0;
+        cursor: pointer;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi <span>Pokemon</span> Master!</h1>
+    <hr>
+    <hr>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/966/original/Ash_Ketchum.jpg?1756463311" alt="Ash Ketchum" class="Ash" width="500" height="350">
+    
+    <h2>Ash Ketchum</h2>
+
+    <hr>
+
+
+    <div class="me">
+    <p>This is Ash Ketchum! Pokemon is my ever favorite show and after growing up I realized why. 
+      <br> He is the reason. He is a lot like me. He is <em>AMBITIOUS</em> and <em>DETERMINED</em> to be the very <strong>best!</strong>
+      
+     <br> 
+     <br>
+     Just like him, I believe that one day I will reach the very peak of my own journey. 
+     <br> As a mathematics major with deep interests in statistics, data science, programming, and computer science, 
+     <br> my goal is not to compete with others but to become the very best version of myself. 
+     <br>I want to push my abilities to their fullest potential and master the fields I’m passionate about. 
+     <br>While I may not be as adventurous, charming, or overflowing with energy as Ash, 
+     <br>I share his drive, passion, and relentless desire to achieve greatness in my own way.
+     
+    
+    </p>
+    </div>
+
+
+    <hr>
+    <hr>
+
+    <h2>All Ash Ketchum's <span>Pokemons</span></h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/968/original/Ash's_pokemons.png?1756463481" alt="Ash's Pokemons" class="Ash-Pokemon" width="800" height="400">
+    
+
+    <button>What's your favorite Pokemon?</button>
+
+    <div class="foot">
+
+    <p>Learn more about <span>Pokemon</span> <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki" >here</a>!</p>
+</div>
+    <script>
+      function Pokemon() {
+        let Name = prompt("Hi Pokemon Master, what's your name?")
+        let Poke = prompt("What's your favorite Pokemon?")
+
+        let h1 = document.querySelector("h1");
+        if (Poke.trim().toLowerCase() === "mewtwo") {
+          h1.innerHTML = "😄<br> That's amazing " + Name + "! MewTwo is my favorite too!";
+        } else {
+          
+          h1.innerHTML = "<br>😄 " + Poke + " is awesome! Hope you find more favorites in your <span>Pokemon</span> journey, "+ Name +"!";
+        }
+
+        alert("Scroll Up ☝️")
+      }
+
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", Pokemon);
+
+    </script>
+  </body>
+</html>
